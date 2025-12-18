@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>table</title>
+    <style>
+        table,th,tr,td{
+            border: 1px solid black;
+            width: 500px;
+            border-collapse: collapse;
+            height: 50px;
+            
+}
+th{
+    background-color: rgb(96, 96, 163);
+    font-size: 20px;
+}
+td{
+    text-align: center;
+    background-color: rgb(117, 141, 141);
+    /*text-align: start;--DEfault*/
+    /*text-align: end;--at the end of table*/
+}
+    </style>
+</head>
+<body>
+    <table >
+        <caption>This is user table</caption>
+        <tr>
+            <th>S.N</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td colspan="4">Total Students:2</td>
+        </tr>
+    </table><br>
+    <table>
+        <tr>
+            <td colspan="2">1</td>
+            
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td rowspan="2">6</td>
+            <td>7</td>
+            
+            <td>8</td>
+            </tr>
+             <tr>
+            <td>9</td>
+            
+            <td colspan="2">10</td>
+            
+            <td>11</td>
+    </table><br>
+    <table>
+        <tr>
+            <td rowspan="3" style="background-color: red;">1</td>
+            <td>2</td>
+            <td colspan="3" style="background-color: green;">3</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: green;">4</td>
+            
+            <td>5</td>
+            <td rowspan="2" style="background-color: red;">6</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: red;">7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            
+            <td colspan="2" style="background-color: green;">11</td>
+            
+            <td>12</td>
+            
+        </tr>
+</body>
+</html>

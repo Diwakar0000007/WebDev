@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+   <form action="">
+    <fieldset>
+        <legend>Personal Information </legend>
+    <label for="Username">Username</label>
+    <input type="text" id="Username" name="Username" placeholder="Enter your Username" value="Ram" readonly disabled>
+    <br />
+
+    <label for="phone">Phone</label>
+    <input type="number" id="phone" name="phone" placeholder="Enter your phone number" min="10" max="20">
+    <br />
+
+</fieldset>
+<fieldset>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br />
+
+    <label for="mypassword">Password</label>
+    <input type="password" name="mypassword" id="mypassword" placeholder="Enter your password">
+    <br />
+</fieldset>
+    <label for="faculty">Faculty</label>
+    <select name="faculty" id="faculty">
+        <option value="">Select a Faculty</option>
+        <option value="CSIT">Computer Science and Information Technology</option>
+        <option value="BIM">Bachelor in Information Management</option>
+        <option value="BCA" selected>Bachelor in Computer Application</option>
+    </select>
+    <br />
+    
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" checked>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="other">
+    <label for="other">Other</label>
+    <br />
+
+    <input type="checkbox" name="terms" id="terms">
+    <label for="terms">I accept the terms and conditions</label>
+    <br />
+
+    <label for="">Upload an image:</label>
+    <input type="file" name="image" id="image">
+    <br />
+    <label for="comment">comment</label>
+    <textarea name="comment" id="comment" rows="10" cols="50">This is default value</textarea>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear"><br>
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date">
+   </form>
+</body>
+</html>
